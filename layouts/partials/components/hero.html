@@ -6,6 +6,9 @@
       {{ with .cta }}
         <a class="button" href="{{ .href }}">{{ .label }}</a>
       {{ end }}
+      {{ with .ctaSecondary }}
+        <a class="text-link" href="{{ .href }}">{{ .label }}</a>
+      {{ end }}
     </div>
 
     {{ with .insights }}

@@ -1,31 +1,28 @@
 {{ define "main" }}
   {{ partial "components/hero.html" (dict
-    "title" "Independent counsel for executives navigating technological change."
-    "summary" "Most enterprises are running operating models built for stable environments. AI is making that mismatch acute. CEZ Consulting provides independent strategic counsel to senior leaders who need rigorous challenge, not another implementation vendor."
-    "cta" (dict "href" "/advisory/" "label" "Explore advisory")
-    "insights" (slice
-      (dict "type" "Framework" "title" "Decision Latency" "href" "/frameworks/decision-latency/")
-      (dict "type" "Essay" "title" "The Production Gap" "href" "/essays/the-production-gap/")
-      (dict "type" "Briefing" "title" "The Fallacy of ROI" "href" "/briefings/the-fallacy-of-roi/")
-    )
+    "title" "Technology moves. Organisations don't."
+    "summary" "That gap is where value stalls. AI is making it acute, but the mismatch is older and deeper. CEZ Consulting gives senior leaders independent counsel to close the gap between what technology can do and what the operating model will allow."
+    "cta" (dict "href" "/contact/" "label" "Start a diagnostic conversation")
+    "ctaSecondary" (dict "href" "/essays/the-production-gap/" "label" "Read the Production Gap →")
   ) }}
-
-  <section class="section figure-band">
-    <div class="container container--narrow">
-      <figure class="figure">
-        <img src="/images/capability-permission-gap.png"
-             alt="Line chart showing technology capability rising steeply over time while organisational permission stays almost flat, with the widening space between them labelled the gap."
-             width="1536" height="1024" loading="lazy" />
-        <figcaption class="figure__caption">Capability has outpaced the organisation's capacity to deploy it. The gap is where value stalls.</figcaption>
-      </figure>
-    </div>
-  </section>
 
   <section class="recognition section">
     <div class="container container--narrow">
       <p class="eyebrow">Background</p>
       <h2>27 years operating at the intersection of technology, architecture, and regulated industries.</h2>
       <p>Experience spanning financial services, cloud platform transformation, enterprise architecture, and large-scale operating model change. This is not vendor advice. It is independent executive counsel grounded in what it takes to operate technology at scale inside complex organisations.</p>
+    </div>
+  </section>
+
+  <section class="section figure-band">
+    <div class="container container--narrow">
+      <p class="lede">Most organisations are not short of technology. They are short of the organisational capacity to deploy it.</p>
+      <figure class="figure">
+        <img src="/images/capability-permission-gap.png"
+             alt="Line chart showing technology capability rising steeply over time while organisational permission stays almost flat, with the widening space between them labelled the gap."
+             width="1536" height="1024" loading="lazy" />
+        <figcaption class="figure__caption">Operational value accumulates in the widening gap between what the technology can do and what the operating model will permit. That gap is the loss.</figcaption>
+      </figure>
     </div>
   </section>
 
@@ -36,9 +33,21 @@
         <h2>Three ways to engage. Nothing else.</h2>
       </div>
       <div class="card-grid" aria-label="Advisory areas">
-        {{ partial "components/advisory-card.html" (dict "label" "01" "title" "Executive Advisory Retainer" "summary" "Ongoing strategic partnership. Independent challenge function, operating-model guidance, and AI operationalisation counsel for executives who need a rigorous thinking partner outside the organisation.") }}
-        {{ partial "components/advisory-card.html" (dict "label" "02" "title" "Transformation Leadership and Counsel" "summary" "Executive-level guidance during high-impact change. AI operationalisation, platform transformation, governance redesign, or production adoption crises, without crossing into delivery management.") }}
-        {{ partial "components/advisory-card.html" (dict "label" "03" "title" "Strategic Diagnostics" "summary" "Structured assessment to identify structural blockers, reveal decision friction, and assess production-readiness. Valuable as a standalone engagement. Often the entry point into an ongoing retainer.") }}
+        {{ partial "components/advisory-card.html" (dict "label" "01" "title" "Executive Advisory Retainer" "href" "/advisory/#executive-advisory-retainer" "summary" "Ongoing strategic partnership. Independent challenge function, operating-model guidance, and AI operationalisation counsel for executives who need a rigorous thinking partner outside the organisation.") }}
+        {{ partial "components/advisory-card.html" (dict "label" "02" "title" "Transformation Leadership and Counsel" "href" "/advisory/#transformation-leadership-and-counsel" "summary" "Executive-level guidance during high-impact change. AI operationalisation, platform transformation, governance redesign, or production adoption crises, without crossing into delivery management.") }}
+        {{ partial "components/advisory-card.html" (dict "label" "03" "title" "Strategic Diagnostics" "href" "/advisory/#strategic-diagnostics" "summary" "Structured assessment to identify structural blockers, reveal decision friction, and assess production-readiness. Valuable as a standalone engagement. Often the entry point into an ongoing retainer.") }}
+      </div>
+      <p class="advisory__contact">Engagements begin with a diagnostic conversation. <a href="/contact/">Start the conversation.</a></p>
+    </div>
+  </section>
+
+  <section class="insights section">
+    <div class="container container--narrow">
+      <p class="eyebrow">Selected insights</p>
+      <div class="insights-rail">
+        {{ partial "components/insight-card.html" (dict "type" "Framework" "title" "Decision Latency" "href" "/frameworks/decision-latency/") }}
+        {{ partial "components/insight-card.html" (dict "type" "Essay" "title" "The Production Gap" "href" "/essays/the-production-gap/") }}
+        {{ partial "components/insight-card.html" (dict "type" "Briefing" "title" "The Fallacy of ROI" "href" "/briefings/the-fallacy-of-roi/") }}
       </div>
     </div>
   </section>

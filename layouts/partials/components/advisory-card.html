@@ -1,5 +1,9 @@
 <article class="card">
   <p class="card__label">{{ .label }}</p>
-  <h3>{{ .title }}</h3>
+  {{ if .href }}
+    <h3><a href="{{ .href }}">{{ .title }}</a></h3>
+  {{ else }}
+    <h3>{{ .title }}</h3>
+  {{ end }}
   <p>{{ .summary }}</p>
 </article>

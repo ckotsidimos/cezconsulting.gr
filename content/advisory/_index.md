@@ -1,6 +1,6 @@
 +++
 title = "Advisory"
-description = "Three ways to engage, and nothing else. Independent counsel for executives carrying technological change through an operating model that was not built for it."
+description = "Independent counsel for senior leaders where the constraint is the operating model, not the technology. Three ways to engage, in order of intensity."
 date = 2026-06-14
 draft = false
 +++

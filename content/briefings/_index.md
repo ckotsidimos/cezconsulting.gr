@@ -1,6 +1,6 @@
 +++
 title = "Briefings"
-description = "Executive-compressed versions of the essays. The argument in under two minutes, scannable and printable, each linking to the full piece."
+description = "The core argument from each essay, compressed for a decision-maker. Each briefing delivers the structural insight in under two minutes, designed to scan and to share."
 date = 2026-06-14
 draft = false
 +++

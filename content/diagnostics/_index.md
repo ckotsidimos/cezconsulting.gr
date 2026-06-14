@@ -1,6 +1,6 @@
 +++
 title = "Diagnostics"
-description = "A structured assessment of where the operating model is blocking execution. Valuable on its own, and usually the entry point into an ongoing engagement."
+description = "A structured assessment that locates the structural constraint precisely. Most leaders can feel the friction; a diagnostic names it and shows what would actually move it."
 date = 2026-06-14
 draft = false
 +++

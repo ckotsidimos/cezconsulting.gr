@@ -1,6 +1,6 @@
 +++
 title = "Essays"
-description = "Longer-form, practitioner-grounded pieces that apply the operating-model lens to the questions executives are actually facing, and show the structure underneath the symptom."
+description = "Deep practitioner writing on the structural questions executives are actually carrying. Each piece names the mechanism, shows why it stalls organisations, and says what actually moves it."
 date = 2026-06-14
 draft = false
 +++
