@@ -15,6 +15,10 @@ A diagnostic locates and names the things that rarely show up on a status report
 
 A precise structural diagnosis you can act on: where the constraint actually is, why effort inside the current model will not move it, and what would. It has standalone value, a clear read of your situation that does not require a longer commitment. It is also the usual way an [advisory relationship](/advisory/) begins, because the diagnosis is where the real work reveals itself.
 
+## Run the self-assessment
+
+[Can Your Organisation Actually Govern Agentic AI?](/diagnostics/agentic-ai-readiness/) is a five-dimension self-assessment you can work through now. It tests the operating model around your AI rather than the technology, and shows where the real exposure sits.
+
 ## Recognition tools
 
 Two frames that senior teams have picked up and used in their own rooms. They are recognition tools, deliberately compressed, useful before a formal diagnostic to test whether the pattern is familiar. They are not the assessment itself, but they are often where people first recognise their own situation.
