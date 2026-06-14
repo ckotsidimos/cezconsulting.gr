@@ -1,6 +1,12 @@
 <header class="site-header">
   <div class="container site-header__inner">
-    <a class="site-brand" href="/" aria-label="{{ site.Title }} home">CEZ Consulting</a>
+    <a class="site-brand" href="/" aria-label="{{ site.Title }} home">
+      <svg class="site-brand__mark" width="26" height="26" viewBox="0 0 28 28" aria-hidden="true" focusable="false">
+        <line x1="5" y1="23" x2="24" y2="6" stroke="#1e3a5f" stroke-width="2.6" stroke-linecap="round"/>
+        <line x1="5" y1="23" x2="24" y2="18" stroke="#1f2933" stroke-width="2.6" stroke-linecap="round"/>
+      </svg>
+      <span class="site-brand__word">CEZ Consulting</span>
+    </a>
     <nav class="site-nav" aria-label="Primary navigation">
       {{ range site.Menus.main }}
         <a href="{{ .URL }}">{{ .Name }}</a>

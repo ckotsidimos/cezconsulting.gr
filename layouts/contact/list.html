@@ -1,0 +1,10 @@
+{{ define "main" }}
+  <article class="section">
+    <div class="container container--narrow prose">
+      <p class="eyebrow">Contact</p>
+      <h1>{{ .Title }}</h1>
+      {{ with .Description }}<p class="lede">{{ . }}</p>{{ end }}
+      {{ .Content }}
+    </div>
+  </article>
+{{ end }}

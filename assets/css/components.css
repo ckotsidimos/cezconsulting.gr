@@ -1,6 +1,18 @@
 .site-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
   width: fit-content;
   color: var(--color-text);
+  font-weight: 650;
+}
+
+.site-brand__mark {
+  display: block;
+  flex: 0 0 auto;
+}
+
+.site-brand__word {
   font-weight: 650;
 }
 
@@ -49,6 +61,25 @@
 .recognition,
 .footer-cta {
   border-top: 1px solid var(--color-border);
+}
+
+.figure {
+  margin: 0;
+}
+
+.figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 52rem;
+  margin-inline: auto;
+}
+
+.figure__caption {
+  margin-top: 0.85rem;
+  color: var(--color-muted);
+  font-size: 0.9rem;
+  text-align: center;
 }
 
 .card {
