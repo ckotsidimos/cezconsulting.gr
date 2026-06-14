@@ -14,6 +14,27 @@
 		
 			<atom:link href="http://localhost:1313/tags/operating-models/index.xml" rel="self" type="application/rss+xml" />
 			<item>
+				<title>Locally Rational, Globally Expensive</title>
+				<link>http://localhost:1313/essays/locally-rational-globally-expensive/</link>
+				<pubDate>Sun, 14 Jun 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/essays/locally-rational-globally-expensive/</guid>
+				<description>Every function adopts AI for the same class of problem, under a different name, bought and governed separately. Each decision is locally rational. The aggregate is structural debt nobody chose.</description>
+			</item>
+			<item>
+				<title>Narrative vs Structure</title>
+				<link>http://localhost:1313/essays/narrative-vs-structure/</link>
+				<pubDate>Sun, 14 Jun 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/essays/narrative-vs-structure/</guid>
+				<description>Faced with a structural problem, organisations change the narrative, not the structure. AI is the first technology fast enough to tell the two apart.</description>
+			</item>
+			<item>
+				<title>The Fallacy of ROI</title>
+				<link>http://localhost:1313/essays/the-fallacy-of-roi/</link>
+				<pubDate>Sun, 14 Jun 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/essays/the-fallacy-of-roi/</guid>
+				<description>The ROI question is not a measurement problem. It is a comprehension problem dressed as a financial one, and it works as a brake that defers commitment without anyone having to say no.</description>
+			</item>
+			<item>
 				<title>The Production Gap</title>
 				<link>http://localhost:1313/essays/the-production-gap/</link>
 				<pubDate>Sun, 14 Jun 2026 00:00:00 +0000</pubDate>

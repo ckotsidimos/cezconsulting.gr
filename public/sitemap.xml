@@ -2,10 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/about/</loc>
+    <lastmod>2026-06-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/advisory/</loc>
+    <lastmod>2026-06-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/ai-adoption/</loc>
+    <lastmod>2026-06-14T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tags/ai-operationalisation/</loc>
     <lastmod>2026-06-14T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/tags/aiops/</loc>
+    <lastmod>2026-06-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/change/</loc>
+    <lastmod>2026-06-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/contact/</loc>
+    <lastmod>2026-06-14T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/frameworks/decision-latency/</loc>
+    <lastmod>2026-06-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/diagnostics/</loc>
     <lastmod>2026-06-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/essays/</loc>
@@ -20,28 +41,44 @@
     <loc>http://localhost:1313/</loc>
     <lastmod>2026-06-14T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/essays/locally-rational-globally-expensive/</loc>
+    <lastmod>2026-06-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/essays/narrative-vs-structure/</loc>
+    <lastmod>2026-06-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/frameworks/operating-model-limits/</loc>
+    <lastmod>2026-06-14T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tags/operating-models/</loc>
     <lastmod>2026-06-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/production-readiness/</loc>
     <lastmod>2026-06-14T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/tags/roi/</loc>
+    <lastmod>2026-06-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/frameworks/structural-debt/</loc>
+    <lastmod>2026-06-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/structural-debt/</loc>
+    <lastmod>2026-06-14T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2026-06-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/essays/the-fallacy-of-roi/</loc>
     <lastmod>2026-06-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/essays/the-production-gap/</loc>
     <lastmod>2026-06-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/about/</loc>
-  </url><url>
-    <loc>http://localhost:1313/advisory/</loc>
+    <loc>http://localhost:1313/frameworks/vendor-feedback-loop/</loc>
+    <lastmod>2026-06-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/briefings/</loc>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
-  </url><url>
-    <loc>http://localhost:1313/contact/</loc>
-  </url><url>
-    <loc>http://localhost:1313/diagnostics/</loc>
   </url>
 </urlset>

@@ -53,3 +53,4 @@ The production gap is uncomfortable precisely because it does not point at the t
 That distance is diagnosable, and it is the first thing worth measuring before the next pilot is funded. The question is not whether the technology will work. The pilot will tell you that. The question is whether the operating model can operate it, and that is a question the technology cannot answer.
 
 The structural account behind this essay, the role of decision latency, the limits of industrial operating models, and the conditions for structural coherence under speed, is set out in [The Kinetic Enterprise](https://kineticorganization.com). CEZ Consulting applies that account to the specific operating model in front of you, and the production gap is usually where the work begins.
+               
