@@ -1,0 +1,41 @@
+{{ define "main" }}
+  {{ partial "components/hero.html" (dict
+    "title" "Independent counsel for executives navigating technological change."
+    "summary" "Most enterprises are running operating models built for stable environments. AI is making that mismatch acute. CEZ Consulting provides independent strategic counsel to senior leaders who need rigorous challenge, not another implementation vendor."
+    "cta" (dict "href" "/advisory/" "label" "Explore advisory")
+    "insights" (slice
+      (dict "type" "Framework" "title" "Placeholder framework title" "href" "/frameworks/")
+      (dict "type" "Essay" "title" "Placeholder essay title" "href" "/essays/")
+      (dict "type" "Briefing" "title" "Placeholder briefing title" "href" "/briefings/")
+    )
+  ) }}
+
+  <section class="recognition section">
+    <div class="container container--narrow">
+      <p class="eyebrow">Background</p>
+      <h2>Two decades operating at the intersection of technology, architecture, and regulated industries.</h2>
+      <p>Experience spanning financial services, cloud platform transformation, enterprise architecture, and large-scale operating model change. This is not vendor advice. It is independent executive counsel grounded in what it takes to operate technology at scale inside complex organisations.</p>
+    </div>
+  </section>
+
+  <section class="advisory section">
+    <div class="container">
+      <div class="section-heading">
+        <p class="eyebrow">Advisory</p>
+        <h2>Three ways to engage. Nothing else.</h2>
+      </div>
+      <div class="card-grid" aria-label="Advisory areas">
+        {{ partial "components/advisory-card.html" (dict "label" "01" "title" "Executive Advisory Retainer" "summary" "Ongoing strategic partnership. Independent challenge function, operating-model guidance, and AI operationalisation counsel for executives who need a rigorous thinking partner outside the organisation.") }}
+        {{ partial "components/advisory-card.html" (dict "label" "02" "title" "Transformation Leadership and Counsel" "summary" "Executive-level guidance during high-impact change. AI operationalisation, platform transformation, governance redesign, or production adoption crises, without crossing into delivery management.") }}
+        {{ partial "components/advisory-card.html" (dict "label" "03" "title" "Strategic Diagnostics" "summary" "Structured assessment to identify structural blockers, reveal decision friction, and assess production-readiness. Valuable as a standalone engagement. Often the entry point into an ongoing retainer.") }}
+      </div>
+    </div>
+  </section>
+
+  {{ partial "components/executive-cta.html" (dict
+    "label" "Engagement"
+    "title" "If the problem is real, the conversation is straightforward."
+    "summary" "CEZ Consulting works with a small number of executives at any time. Engagements begin with a diagnostic conversation."
+    "cta" (dict "href" "/contact/" "label" "Contact CEZ Consulting")
+  ) }}
+{{ end }}

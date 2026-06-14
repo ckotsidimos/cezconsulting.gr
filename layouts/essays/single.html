@@ -1,0 +1,38 @@
+{{ define "main" }}
+  <article class="essay section">
+    <div class="container essay__container">
+      <header class="essay__header">
+        <p class="eyebrow">Essay</p>
+        <h1>{{ .Title }}</h1>
+        {{ with .Description }}<p class="lede">{{ . }}</p>{{ end }}
+        {{ partial "components/metadata-row.html" (slice
+          (dict "label" "Reading time" "value" (cond (isset .Params "readingtime") .Params.readingTime (printf "%d min read" .ReadingTime)))
+          (dict "label" "Published" "value" (.Date.Format "2 Jan 2006"))
+          (dict "label" "Type" "value" (.Params.type | default "Essay"))
+        ) }}
+      </header>
+
+      {{ with .Params.summary }}
+        <section class="essay__summary" aria-label="Executive summary">
+          <h2>Executive summary</h2>
+          <p>{{ . }}</p>
+        </section>
+      {{ end }}
+
+      <div class="essay__content prose">
+        {{ .Content }}
+      </div>
+
+      {{ with .Params.relatedFrameworks }}
+        <section class="related-frameworks" aria-labelledby="related-frameworks-title">
+          <h2 id="related-frameworks-title">Related frameworks</h2>
+          <div class="related-frameworks__list">
+            {{ range . }}
+              {{ partial "components/framework-summary.html" . }}
+            {{ end }}
+          </div>
+        </section>
+      {{ end }}
+    </div>
+  </article>
+{{ end }}

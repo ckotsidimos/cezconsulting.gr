@@ -1,0 +1,145 @@
+.site-brand {
+  width: fit-content;
+  color: var(--color-text);
+  font-weight: 650;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.75rem;
+  margin-top: 1.25rem;
+  padding-inline: 1.15rem;
+  border: 1px solid var(--color-accent);
+  background: var(--color-accent);
+  color: #ffffff;
+  font-weight: 650;
+}
+
+.button:hover {
+  background: transparent;
+  color: var(--color-accent);
+}
+
+.insights-rail {
+  min-width: 0;
+  border-top: 1px solid var(--color-border);
+}
+
+.rail-item {
+  display: block;
+  padding-block: 1.4rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.rail-item span {
+  display: block;
+  margin-bottom: 0.35rem;
+  color: var(--color-muted);
+  font-size: 0.85rem;
+}
+
+.rail-item strong {
+  display: block;
+  color: var(--color-text);
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.recognition,
+.footer-cta {
+  border-top: 1px solid var(--color-border);
+}
+
+.card {
+  min-height: 14rem;
+  padding: 1.5rem;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+}
+
+.framework-summary {
+  display: grid;
+  gap: 1rem;
+  padding-block: 1.5rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.metadata-row {
+  display: grid;
+  gap: 1rem;
+  margin: 2rem 0 0;
+  padding-block: 1rem;
+  border-block: 1px solid var(--color-border);
+}
+
+.metadata-row__item {
+  display: grid;
+  gap: 0.25rem;
+}
+
+.metadata-row dt {
+  color: var(--color-accent);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.metadata-row dd {
+  margin: 0;
+  color: var(--color-muted);
+}
+
+.text-link {
+  display: inline-block;
+  margin-top: 1rem;
+  color: var(--color-accent);
+  font-weight: 650;
+  text-decoration: underline;
+  text-underline-offset: 0.25em;
+}
+
+.essay__summary {
+  padding-block: 1.5rem;
+  border-block: 1px solid var(--color-border);
+}
+
+.essay__summary h2,
+.related-frameworks h2,
+.reference-section h2 {
+  font-size: clamp(1.4rem, 2vw, 1.75rem);
+}
+
+.reference-section {
+  padding-block: 1.5rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.reference-list {
+  margin: 0;
+  padding-left: 1.25rem;
+  color: var(--color-muted);
+}
+
+.reference-list li + li {
+  margin-top: 0.75rem;
+}
+
+.reference-links {
+  display: grid;
+  border-top: 1px solid var(--color-border);
+}
+
+.reference-link {
+  padding-block: 1rem;
+  border-bottom: 1px solid var(--color-border);
+  color: var(--color-text);
+  font-weight: 600;
+}
+
+@media (min-width: 48rem) {
+  .metadata-row {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}

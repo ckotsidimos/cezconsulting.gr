@@ -1,0 +1,46 @@
+{{ define "main" }}
+  {{ partial "components/hero.html" (dict
+    "title" "Operationalising AI and technological change at scale."
+    "summary" "Placeholder homepage message for CEZ Consulting. This space will introduce the advisory position, executive audience, and core operating thesis."
+    "cta" (dict "href" "/advisory/" "label" "Explore advisory")
+    "insights" (slice
+      (dict "type" "Framework" "title" "Placeholder framework title" "href" "/frameworks/")
+      (dict "type" "Essay" "title" "Placeholder essay title" "href" "/essays/")
+      (dict "type" "Briefing" "title" "Placeholder briefing title" "href" "/briefings/")
+    )
+  ) }}
+
+  <section class="recognition section">
+    <div class="container container--narrow">
+      <p class="eyebrow">Recognition</p>
+      <h2>Placeholder recognition statement for executive credibility.</h2>
+      <p>This single-column block will later hold concise proof points, institutional context, or advisory positioning without decorative elements.</p>
+    </div>
+  </section>
+
+  <section class="advisory section">
+    <div class="container">
+      <div class="section-heading">
+        <p class="eyebrow">Advisory areas</p>
+        <h2>Placeholder advisory focus.</h2>
+      </div>
+      <div class="card-grid" aria-label="Advisory areas">
+        {{ $advisoryCards := slice
+          (dict "label" "01" "title" "Placeholder advisory card" "summary" "Short placeholder description for an executive advisory focus area.")
+          (dict "label" "02" "title" "Placeholder advisory card" "summary" "Short placeholder description for an executive advisory focus area.")
+          (dict "label" "03" "title" "Placeholder advisory card" "summary" "Short placeholder description for an executive advisory focus area.")
+        }}
+        {{ range $advisoryCards }}
+          {{ partial "components/advisory-card.html" . }}
+        {{ end }}
+      </div>
+    </div>
+  </section>
+
+  {{ partial "components/executive-cta.html" (dict
+    "label" "Next step"
+    "title" "Placeholder footer call to action."
+    "summary" "This area will provide a restrained executive invitation aligned to the advisory model."
+    "cta" (dict "href" "/contact/" "label" "Contact CEZ Consulting")
+  ) }}
+{{ end }}

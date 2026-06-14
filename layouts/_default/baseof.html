@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="{{ site.Language.LanguageCode | default "en-gb" }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} | {{ site.Title }}{{ end }}</title>
+    <meta name="description" content="{{ .Description | default site.Params.description }}">
+    {{ $css := slice (resources.Get "css/main.css") (resources.Get "css/typography.css") (resources.Get "css/layout.css") (resources.Get "css/components.css") (resources.Get "css/utilities.css") }}
+    {{ $styles := $css | resources.Concat "css/site.css" | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}">
+  </head>
+  <body>
+    {{ partial "site-header.html" . }}
+    <main id="main-content">
+      {{ block "main" . }}{{ end }}
+    </main>
+    {{ partial "site-footer.html" . }}
+  </body>
+</html>

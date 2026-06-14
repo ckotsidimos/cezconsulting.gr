@@ -1,0 +1,6 @@
+.card p:last-child,
+.footer-cta p:last-of-type,
+.recognition p:last-child,
+.site-footer p {
+  margin-bottom: 0;
+}

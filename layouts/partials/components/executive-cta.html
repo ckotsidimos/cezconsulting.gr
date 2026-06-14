@@ -1,0 +1,10 @@
+<section class="footer-cta section">
+  <div class="container container--narrow">
+    {{ with .label }}<p class="eyebrow">{{ . }}</p>{{ end }}
+    <h2>{{ .title }}</h2>
+    <p>{{ .summary }}</p>
+    {{ with .cta }}
+      <a class="text-link" href="{{ .href }}">{{ .label }}</a>
+    {{ end }}
+  </div>
+</section>

@@ -1,0 +1,36 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-gb'
+title = 'CEZ Consulting'
+
+[params]
+  description = 'Executive advisory for operationalising AI and technological change at scale.'
+
+[menu]
+  [[menu.main]]
+    name = 'Advisory'
+    url = '/advisory/'
+    weight = 10
+  [[menu.main]]
+    name = 'Frameworks'
+    url = '/frameworks/'
+    weight = 20
+  [[menu.main]]
+    name = 'Essays'
+    url = '/essays/'
+    weight = 30
+  [[menu.main]]
+    name = 'Briefings'
+    url = '/briefings/'
+    weight = 40
+  [[menu.main]]
+    name = 'Diagnostics'
+    url = '/diagnostics/'
+    weight = 50
+  [[menu.main]]
+    name = 'About'
+    url = '/about/'
+    weight = 60
+  [[menu.main]]
+    name = 'Contact'
+    url = '/contact/'
+    weight = 70

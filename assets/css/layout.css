@@ -1,0 +1,125 @@
+.container {
+  width: calc(100% - 2rem);
+  max-width: var(--container);
+  min-width: 0;
+  margin-inline: auto;
+}
+
+.container--narrow {
+  max-width: var(--container-narrow);
+}
+
+.section {
+  padding-block: clamp(4rem, 8vw, 8rem);
+}
+
+.site-header {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.site-header__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding-block: 1.25rem;
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1rem;
+  max-width: 100%;
+  color: var(--color-muted);
+  font-size: 0.95rem;
+}
+
+.site-nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2rem;
+}
+
+.hero {
+  padding-top: clamp(4rem, 8vw, 7rem);
+}
+
+.hero__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: clamp(3rem, 7vw, 6rem);
+}
+
+.hero__message {
+  width: 100%;
+  min-width: 0;
+  max-width: 45rem;
+}
+
+.section-heading {
+  margin-bottom: clamp(2rem, 5vw, 3.5rem);
+}
+
+.essay__container {
+  max-width: 45rem;
+}
+
+.framework__container {
+  max-width: 54rem;
+}
+
+.essay__header,
+.essay__summary,
+.related-frameworks,
+.framework__header,
+.reference-section,
+.framework__content {
+  margin-bottom: clamp(2.5rem, 6vw, 4rem);
+}
+
+.card-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.site-footer {
+  border-top: 1px solid var(--color-border);
+}
+
+.site-footer__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding-block: 2rem;
+  color: var(--color-muted);
+  font-size: 0.95rem;
+}
+
+@media (min-width: 48rem) {
+  .site-header__inner,
+  .site-footer__inner {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .hero__grid {
+    grid-template-columns: minmax(0, 1fr) minmax(18rem, 24rem);
+    align-items: start;
+  }
+
+  .card-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 47.99rem) {
+  .site-nav {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.25rem 1rem;
+  }
+
+  .hero__message {
+    max-width: 20rem;
+  }
+}

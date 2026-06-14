@@ -1,0 +1,10 @@
+<article class="framework-summary">
+  <div>
+    <p class="eyebrow">{{ .label }}</p>
+    <h3>{{ .title }}</h3>
+  </div>
+  <p>{{ .summary }}</p>
+  {{ with .href }}
+    <a class="text-link" href="{{ . }}">Read framework</a>
+  {{ end }}
+</article>

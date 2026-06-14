@@ -1,0 +1,69 @@
+{{ define "main" }}
+  <article class="framework section">
+    <div class="container framework__container">
+      <header class="framework__header">
+        <p class="eyebrow">Framework</p>
+        <h1>{{ .Title }}</h1>
+        {{ with .Description }}<p class="lede">{{ . }}</p>{{ end }}
+        {{ partial "components/metadata-row.html" (slice
+          (dict "label" "Type" "value" (.Params.type | default "Framework"))
+          (dict "label" "Reading time" "value" (cond (isset .Params "readingtime") .Params.readingTime (printf "%d min read" .ReadingTime)))
+          (dict "label" "Updated" "value" (.Date.Format "2 Jan 2006"))
+        ) }}
+      </header>
+
+      <section class="reference-section" aria-labelledby="framework-definition">
+        <h2 id="framework-definition">Framework definition</h2>
+        {{ with .Params.definition }}
+          <p>{{ . }}</p>
+        {{ else }}
+          {{ with .Params.summary }}<p>{{ . }}</p>{{ end }}
+        {{ end }}
+      </section>
+
+      <section class="reference-section" aria-labelledby="why-it-matters">
+        <h2 id="why-it-matters">Why it matters</h2>
+        {{ with .Params.whyItMatters }}<p>{{ . }}</p>{{ end }}
+      </section>
+
+      <section class="reference-section" aria-labelledby="operational-implications">
+        <h2 id="operational-implications">Operational implications</h2>
+        {{ with .Params.operationalImplications }}
+          <ul class="reference-list">
+            {{ range . }}
+              <li>{{ . }}</li>
+            {{ end }}
+          </ul>
+        {{ end }}
+      </section>
+
+      {{ with .Content }}
+        <div class="framework__content prose">
+          {{ . }}
+        </div>
+      {{ end }}
+
+      {{ with .Params.relatedEssays }}
+        <section class="reference-section" aria-labelledby="related-essays">
+          <h2 id="related-essays">Related essays</h2>
+          <div class="reference-links">
+            {{ range . }}
+              <a class="reference-link" href="{{ .href }}">{{ .title }}</a>
+            {{ end }}
+          </div>
+        </section>
+      {{ end }}
+
+      {{ with .Params.relatedDiagnostics }}
+        <section class="reference-section" aria-labelledby="related-diagnostics">
+          <h2 id="related-diagnostics">Related diagnostics</h2>
+          <div class="reference-links">
+            {{ range . }}
+              <a class="reference-link" href="{{ .href }}">{{ .title }}</a>
+            {{ end }}
+          </div>
+        </section>
+      {{ end }}
+    </div>
+  </article>
+{{ end }}

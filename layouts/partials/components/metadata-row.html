@@ -1,0 +1,8 @@
+<dl class="metadata-row">
+  {{ range . }}
+    <div class="metadata-row__item">
+      <dt>{{ .label }}</dt>
+      <dd>{{ .value }}</dd>
+    </div>
+  {{ end }}
+</dl>

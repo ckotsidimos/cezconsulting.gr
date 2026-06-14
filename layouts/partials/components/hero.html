@@ -1,0 +1,20 @@
+<section class="hero section">
+  <div class="container hero__grid">
+    <div class="hero__message">
+      <h1>{{ .title }}</h1>
+      <p class="lede">{{ .summary }}</p>
+      {{ with .cta }}
+        <a class="button" href="{{ .href }}">{{ .label }}</a>
+      {{ end }}
+    </div>
+
+    {{ with .insights }}
+      <aside class="insights-rail" aria-label="Featured insights">
+        <p class="rail-title">Featured insights</p>
+        {{ range . }}
+          {{ partial "components/insight-card.html" . }}
+        {{ end }}
+      </aside>
+    {{ end }}
+  </div>
+</section>

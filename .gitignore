@@ -1,0 +1,33 @@
+# =====================================================================
+# CEZ site repo — publish the clean site only.
+# Keep internal agent/strategy material OUT of the public GitHub repo.
+# These files stay on your disk; they are just not tracked or uploaded.
+# =====================================================================
+
+# --- Internal / agent working files ---
+CLAUDE.md
+AGENTS.md
+MEMORY.md
+MEMORY-LND-Home.md
+/docs/
+
+# --- Quarantined raw collateral (drafts + third-party source) ---
+/collateral-source/
+
+# --- Hugo transient build artifacts ---
+.hugo_build.lock
+/resources/_gen/
+
+# NOTE: /public/ is intentionally NOT ignored. This repo commits the built
+# site in public/ as its GitHub Pages deploy artifact. Do not add /public/.
+# /static/ (incl. static/collateral/ — the two finished decks) is part of the
+# published site and stays tracked.
+
+# --- OS / editor noise ---
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*~
+.idea/
+.vscode/
