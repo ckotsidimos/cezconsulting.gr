@@ -1,5 +1,5 @@
 <section class="hero section">
-  <div class="container hero__grid">
+  <div class="container hero__grid{{ if not .insights }} hero__grid--full{{ end }}">
     <div class="hero__message">
       <h1>{{ .title }}</h1>
       <p class="lede">{{ .summary }}</p>
