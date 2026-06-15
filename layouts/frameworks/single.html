@@ -2,7 +2,7 @@
   <article class="framework section">
     <div class="container framework__container">
       <header class="framework__header">
-        <p class="eyebrow">Framework</p>
+        <p class="eyebrow">Model</p>
         <h1>{{ .Title }}</h1>
         {{ with .Description }}<p class="lede">{{ . }}</p>{{ end }}
         {{ partial "components/metadata-row.html" (slice
@@ -20,6 +20,13 @@
           {{ with .Params.summary }}<p>{{ . }}</p>{{ end }}
         {{ end }}
       </section>
+
+      {{ with .Params.diagram }}
+        <figure class="diagram framework__diagram">
+          {{ partial (printf "diagrams/%s.html" .) $ }}
+          {{ with $.Params.diagramCaption }}<figcaption>{{ . }}</figcaption>{{ end }}
+        </figure>
+      {{ end }}
 
       <section class="reference-section" aria-labelledby="why-it-matters">
         <h2 id="why-it-matters">Why it matters</h2>
@@ -45,7 +52,7 @@
 
       {{ with .Params.relatedEssays }}
         <section class="reference-section" aria-labelledby="related-essays">
-          <h2 id="related-essays">Related essays</h2>
+          <h2 id="related-essays">Related deep dives</h2>
           <div class="reference-links">
             {{ range . }}
               <a class="reference-link" href="{{ .href }}">{{ .title }}</a>

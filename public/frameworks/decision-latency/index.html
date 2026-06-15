@@ -12,7 +12,8 @@
     <link rel="icon" href="/favicon.ico" sizes="any">
     
     
-    <link rel="stylesheet" href="/css/site.min.fa3f78bc6ec514299f4d33f6afa43863d90a19e7335c594751863d7d81a57032.css" integrity="sha256-&#43;j94vG7FFCmfTTP2r6Q4Y9kKGeczXFlHUYY9fYGlcDI=">
+    <link rel="stylesheet" href="/css/site.min.0ec4660b877463c4db944ba2adbd7cedc70143c1e4c1a762a711c27d2b7ab461.css" integrity="sha256-DsRmC4d0Y8TblEuirb187ccBQ8HkwadipxHCfSt6tGE=">
+    <noscript><style>@media (max-width: 47.99rem){.site-nav{display:flex !important;flex-direction:column}.nav-toggle{display:none}}</style></noscript>
   </head>
   <body>
     <header class="site-header">
@@ -24,13 +25,18 @@
       </svg>
       <span class="site-brand__word">CEZ Consulting</span>
     </a>
-    <nav class="site-nav" aria-label="Primary navigation">
+    <button class="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-controls="primary-nav" aria-expanded="false">
+      <span class="nav-toggle__bar"></span>
+      <span class="nav-toggle__bar"></span>
+      <span class="nav-toggle__bar"></span>
+    </button>
+    <nav class="site-nav" id="primary-nav" aria-label="Primary navigation">
       
         <a href="/advisory/">Advisory</a>
       
-        <a href="/diagnostics/">Diagnostics</a>
+        <a href="/insights/">Insights</a>
       
-        <a href="/essays/">Essays</a>
+        <a href="/diagnostics/">Diagnostics</a>
       
         <a href="/about/">About</a>
       
@@ -41,11 +47,23 @@
 </header>
 
     <main id="main-content">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+  <div class="container container--narrow">
+    <ol class="breadcrumb__list">
+      <li class="breadcrumb__item"><a href="/">Home</a></li>
+      
+        <li class="breadcrumb__item"><a href="/frameworks/">Models</a></li>
+      
+      <li class="breadcrumb__item" aria-current="page">Decision Latency</li>
+    </ol>
+  </div>
+</nav>
+
       
   <article class="framework section">
     <div class="container framework__container">
       <header class="framework__header">
-        <p class="eyebrow">Framework</p>
+        <p class="eyebrow">Model</p>
         <h1>Decision Latency</h1>
         <p class="lede">The time between intent and coordinated action, and why it is the constraint technology investment keeps failing to touch.</p>
         <dl class="metadata-row">
@@ -75,6 +93,35 @@
           <p>Decision latency is the elapsed time between intent and coordinated action across an organisation. It measures the interval in which a decision waits, in queues, approvals, and committees, rather than the time it takes to do the work itself. In most large organisations it is the dominant constraint on execution, and it is a property of the operating model, not of the people inside it.</p>
         
       </section>
+
+      
+        <figure class="diagram framework__diagram">
+          <svg viewBox="0 0 640 230" role="img" aria-labelledby="dl-t dl-d" xmlns="http://www.w3.org/2000/svg">
+  <title id="dl-t">Decision latency</title>
+  <desc id="dl-d">Work is ready early in the timeline, but the decision keeps travelling through queues, reviews, committees and change windows long after.</desc>
+
+  
+  <line class="stroke" x1="80" y1="70" x2="80" y2="185"/>
+  <text class="t-strong t-small" x="80" y="58" text-anchor="start">Intent</text>
+  <line class="stroke" x1="560" y1="70" x2="560" y2="185"/>
+  <text class="t-strong t-small" x="560" y="58" text-anchor="end">Coordinated action</text>
+
+  
+  <rect class="fill-accent" x="80" y="100" width="95" height="32"/>
+  <rect class="fill-band-strong" x="175" y="100" width="385" height="32"/>
+
+  <text class="t-accent t-small" x="367" y="92" text-anchor="middle">Decision latency</text>
+  <text class="t-small" x="80" y="152" text-anchor="start">work ready in days</text>
+  <text class="t-small" x="367" y="152" text-anchor="middle">queue &#183; risk review &#183; committee &#183; board &#183; change window</text>
+
+  
+  <line class="stroke-muted" x1="70" y1="185" x2="600" y2="185"/>
+  <text class="t-small" x="600" y="205" text-anchor="end">time &#8594;</text>
+</svg>
+
+          <figcaption>Latency is the interval the decision waits, not the time the work takes. The work is ready in days; the decision keeps travelling through queues, reviews, committees and change windows.</figcaption>
+        </figure>
+      
 
       <section class="reference-section" aria-labelledby="why-it-matters">
         <h2 id="why-it-matters">Why it matters</h2>
@@ -115,7 +162,7 @@
 
       
         <section class="reference-section" aria-labelledby="related-essays">
-          <h2 id="related-essays">Related essays</h2>
+          <h2 id="related-essays">Related deep dives</h2>
           <div class="reference-links">
             
               <a class="reference-link" href="/essays/the-production-gap/">The Production Gap</a>
@@ -133,8 +180,8 @@
   <div class="container site-footer__inner">
     <p>&copy; 2026 CEZ Consulting</p>
     <nav class="footer__links" aria-label="Secondary navigation">
-      <a href="/frameworks/">Frameworks</a>
-      <a href="/briefings/">Briefings</a>
+      <a href="/insights/">Insights</a>
+      <a href="/diagnostics/">Diagnostics</a>
       <a href="/contact/">Contact</a>
     </nav>
     <div class="footer__external">
@@ -145,5 +192,16 @@
   </div>
 </footer>
 
+    <script>
+      (function () {
+        var toggle = document.querySelector('.nav-toggle');
+        var nav = document.getElementById('primary-nav');
+        if (!toggle || !nav) return;
+        toggle.addEventListener('click', function () {
+          var open = nav.classList.toggle('is-open');
+          toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        });
+      })();
+    </script>
   </body>
 </html>

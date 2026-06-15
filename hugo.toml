@@ -11,13 +11,13 @@ title = 'CEZ Consulting'
     url = '/advisory/'
     weight = 10
   [[menu.main]]
+    name = 'Insights'
+    url = '/insights/'
+    weight = 15
+  [[menu.main]]
     name = 'Diagnostics'
     url = '/diagnostics/'
     weight = 20
-  [[menu.main]]
-    name = 'Essays'
-    url = '/essays/'
-    weight = 30
   [[menu.main]]
     name = 'About'
     url = '/about/'

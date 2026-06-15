@@ -6,6 +6,8 @@ date = 2026-06-14
 featured = false
 readingTime = "4 min read"
 draft = false
+diagram = "operating-model-limits"
+diagramCaption = "Inside its valid domain the model is effective. Past the limit, under sustained speed and variability, activity keeps rising while outcomes flatten. The gap between them is motion without progress."
 
 definition = "Operating model limits are the boundary of an industrial operating model's valid domain. Control-oriented models, built for stable and predictable work, remain effective inside that domain. Applied beyond it, under sustained speed and variability, they do not collapse visibly. They generate more activity while leaving the structural bottlenecks intact."
 

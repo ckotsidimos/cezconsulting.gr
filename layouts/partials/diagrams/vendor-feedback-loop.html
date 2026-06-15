@@ -1,0 +1,36 @@
+<svg viewBox="0 0 640 360" role="img" aria-labelledby="vfl-t vfl-d" xmlns="http://www.w3.org/2000/svg">
+  <title id="vfl-t">The vendor feedback loop</title>
+  <desc id="vfl-d">A reinforcing loop: internal fragmentation shapes the market into matching categories, each function buys separately, boundaries harden, and the fragmentation deepens.</desc>
+  <defs>
+    <marker id="vfl-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" class="fill-accent"/>
+    </marker>
+  </defs>
+
+  <!-- nodes -->
+  <rect class="fill-surface" x="235" y="24" width="170" height="56" rx="2"/>
+  <text class="t-strong t-small" x="320" y="48" text-anchor="middle">Internal</text>
+  <text class="t-strong t-small" x="320" y="66" text-anchor="middle">fragmentation</text>
+
+  <rect class="fill-surface" x="445" y="152" width="170" height="56" rx="2"/>
+  <text class="t-strong t-small" x="530" y="176" text-anchor="middle">Market builds</text>
+  <text class="t-strong t-small" x="530" y="194" text-anchor="middle">matching categories</text>
+
+  <rect class="fill-surface" x="235" y="280" width="170" height="56" rx="2"/>
+  <text class="t-strong t-small" x="320" y="304" text-anchor="middle">Each function</text>
+  <text class="t-strong t-small" x="320" y="322" text-anchor="middle">buys separately</text>
+
+  <rect class="fill-surface" x="25" y="152" width="170" height="56" rx="2"/>
+  <text class="t-strong t-small" x="110" y="176" text-anchor="middle">Internal boundaries</text>
+  <text class="t-strong t-small" x="110" y="194" text-anchor="middle">harden</text>
+
+  <!-- clockwise reinforcing arrows -->
+  <path class="stroke" marker-end="url(#vfl-arrow)" d="M405,62 Q500,80 520,150"/>
+  <path class="stroke" marker-end="url(#vfl-arrow)" d="M520,210 Q500,280 407,300"/>
+  <path class="stroke" marker-end="url(#vfl-arrow)" d="M235,300 Q140,280 120,210"/>
+  <path class="stroke" marker-end="url(#vfl-arrow)" d="M120,150 Q140,80 233,62"/>
+
+  <!-- centre -->
+  <text class="t-accent" x="320" y="176" text-anchor="middle">Reinforcing loop</text>
+  <text class="t-small" x="320" y="196" text-anchor="middle">the cost grows each cycle</text>
+</svg>

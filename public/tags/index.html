@@ -12,7 +12,8 @@
     <link rel="icon" href="/favicon.ico" sizes="any">
     
     
-    <link rel="stylesheet" href="/css/site.min.fa3f78bc6ec514299f4d33f6afa43863d90a19e7335c594751863d7d81a57032.css" integrity="sha256-&#43;j94vG7FFCmfTTP2r6Q4Y9kKGeczXFlHUYY9fYGlcDI=">
+    <link rel="stylesheet" href="/css/site.min.0ec4660b877463c4db944ba2adbd7cedc70143c1e4c1a762a711c27d2b7ab461.css" integrity="sha256-DsRmC4d0Y8TblEuirb187ccBQ8HkwadipxHCfSt6tGE=">
+    <noscript><style>@media (max-width: 47.99rem){.site-nav{display:flex !important;flex-direction:column}.nav-toggle{display:none}}</style></noscript>
   </head>
   <body>
     <header class="site-header">
@@ -24,13 +25,18 @@
       </svg>
       <span class="site-brand__word">CEZ Consulting</span>
     </a>
-    <nav class="site-nav" aria-label="Primary navigation">
+    <button class="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-controls="primary-nav" aria-expanded="false">
+      <span class="nav-toggle__bar"></span>
+      <span class="nav-toggle__bar"></span>
+      <span class="nav-toggle__bar"></span>
+    </button>
+    <nav class="site-nav" id="primary-nav" aria-label="Primary navigation">
       
         <a href="/advisory/">Advisory</a>
       
-        <a href="/diagnostics/">Diagnostics</a>
+        <a href="/insights/">Insights</a>
       
-        <a href="/essays/">Essays</a>
+        <a href="/diagnostics/">Diagnostics</a>
       
         <a href="/about/">About</a>
       
@@ -41,6 +47,16 @@
 </header>
 
     <main id="main-content">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+  <div class="container container--narrow">
+    <ol class="breadcrumb__list">
+      <li class="breadcrumb__item"><a href="/">Home</a></li>
+      
+      <li class="breadcrumb__item" aria-current="page">Tags</li>
+    </ol>
+  </div>
+</nav>
+
       
   <section class="section">
     <div class="container container--narrow">
@@ -138,8 +154,8 @@
   <div class="container site-footer__inner">
     <p>&copy; 2026 CEZ Consulting</p>
     <nav class="footer__links" aria-label="Secondary navigation">
-      <a href="/frameworks/">Frameworks</a>
-      <a href="/briefings/">Briefings</a>
+      <a href="/insights/">Insights</a>
+      <a href="/diagnostics/">Diagnostics</a>
       <a href="/contact/">Contact</a>
     </nav>
     <div class="footer__external">
@@ -150,5 +166,16 @@
   </div>
 </footer>
 
+    <script>
+      (function () {
+        var toggle = document.querySelector('.nav-toggle');
+        var nav = document.getElementById('primary-nav');
+        if (!toggle || !nav) return;
+        toggle.addEventListener('click', function () {
+          var open = nav.classList.toggle('is-open');
+          toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        });
+      })();
+    </script>
   </body>
 </html>

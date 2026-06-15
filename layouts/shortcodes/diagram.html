@@ -1,0 +1,7 @@
+{{- /* Inline-SVG diagram loader. Usage: {{< diagram name="decision-latency" caption="..." >}} */ -}}
+{{- $name := .Get "name" -}}
+{{- $caption := .Get "caption" -}}
+<figure class="diagram">
+  {{ partial (printf "diagrams/%s.html" $name) . }}
+  {{- with $caption }}<figcaption>{{ . }}</figcaption>{{- end }}
+</figure>

@@ -3,7 +3,7 @@
     "title" "Technology moves. Organisations don't."
     "summary" "That gap is where value stalls. AI is making it acute, but the mismatch is older and deeper. CEZ Consulting gives senior leaders independent counsel to close the gap between what technology can do and what the operating model will allow."
     "cta" (dict "href" "/contact/" "label" "Start a diagnostic conversation")
-    "ctaSecondary" (dict "href" "/essays/the-production-gap/" "label" "Read the Production Gap →")
+    "ctaSecondary" (dict "href" "/diagnostics/agentic-ai-readiness/" "label" "Run the self-assessment →")
     "figure" (dict
       "src" "/images/capability-permission-gap.png"
       "alt" "Line chart: technology capability rising steeply over time while organisational permission stays almost flat; the widening gap between them is the lost operational value."
@@ -11,11 +11,27 @@
     )
   ) }}
 
-  <section class="recognition section">
+  <section class="insights section">
+    <div class="container">
+      <p class="eyebrow">Selected insights</p>
+      <div class="insights-rail">
+        {{ partial "components/insight-card.html" (dict "type" "Model" "title" "Decision Latency" "href" "/frameworks/decision-latency/") }}
+        {{ partial "components/insight-card.html" (dict "type" "Deep Dive" "title" "The Production Gap" "href" "/essays/the-production-gap/") }}
+        {{ partial "components/insight-card.html" (dict "type" "Executive Brief" "title" "The Fallacy of ROI" "href" "/briefings/the-fallacy-of-roi/") }}
+      </div>
+    </div>
+  </section>
+
+  <section class="consequence section">
     <div class="container container--narrow">
-      <p class="eyebrow">Background</p>
-      <h2>27 years operating at the intersection of technology, architecture, and regulated industries.</h2>
-      <p>Experience spanning financial services, cloud platform transformation, enterprise architecture, and large-scale operating model change. This is not vendor advice. It is independent executive counsel grounded in what it takes to operate technology at scale inside complex organisations.</p>
+      <p class="eyebrow">What inaction looks like</p>
+      <h2>The cost is rarely visible until it is expensive.</h2>
+      <p>The gap does not announce itself. It shows up as the pilot that passes every technical review and still never reaches production, because no one owns the decision to deploy it. As the governance model that satisfies the auditor while no one in the building can actually interpret what it flags. As the third initiative to stall at the same point as the first two, each time explained away as a delivery problem.</p>
+      <p>None of these read as structural on a status report, which is precisely why they persist. The technology keeps working. The operating model keeps refusing it. The cost compounds quietly, in time, in credibility, and in the options you no longer have by the time the pattern becomes undeniable.</p>
+      <figure class="diagram">
+        {{ partial "diagrams/consequence-flow.html" . }}
+        <figcaption>Investment, pilots and governance effort keep flowing in. The operating model absorbs most of it, and only a fraction reaches production. Adding more effort upstream does not move the constraint.</figcaption>
+      </figure>
     </div>
   </section>
 
@@ -34,21 +50,21 @@
     </div>
   </section>
 
-  <section class="insights section">
+  <section class="closing section">
     <div class="container">
-      <p class="eyebrow">Selected insights</p>
-      <div class="insights-rail">
-        {{ partial "components/insight-card.html" (dict "type" "Framework" "title" "Decision Latency" "href" "/frameworks/decision-latency/") }}
-        {{ partial "components/insight-card.html" (dict "type" "Essay" "title" "The Production Gap" "href" "/essays/the-production-gap/") }}
-        {{ partial "components/insight-card.html" (dict "type" "Briefing" "title" "The Fallacy of ROI" "href" "/briefings/the-fallacy-of-roi/") }}
+      <div class="closing-grid">
+        <div class="closing-col">
+          <p class="eyebrow">Background</p>
+          <h2>27 years operating at the intersection of technology, architecture, and regulated industries.</h2>
+          <p>Experience spanning financial services, cloud platform transformation, enterprise architecture, and large-scale operating model change. This is not vendor advice. It is independent executive counsel grounded in what it takes to operate technology at scale inside complex organisations.</p>
+        </div>
+        <div class="closing-col">
+          <p class="eyebrow">Engagement</p>
+          <h2>If the problem is real, the conversation is straightforward.</h2>
+          <p>CEZ Consulting works with a small number of executives at any time. Engagements begin with a diagnostic conversation.</p>
+          <a class="text-link" href="/contact/">Contact CEZ Consulting</a>
+        </div>
       </div>
     </div>
   </section>
-
-  {{ partial "components/executive-cta.html" (dict
-    "label" "Engagement"
-    "title" "If the problem is real, the conversation is straightforward."
-    "summary" "CEZ Consulting works with a small number of executives at any time. Engagements begin with a diagnostic conversation."
-    "cta" (dict "href" "/contact/" "label" "Contact CEZ Consulting")
-  ) }}
 {{ end }}

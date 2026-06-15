@@ -6,6 +6,8 @@ date = 2026-06-14
 featured = false
 readingTime = "4 min read"
 draft = false
+diagram = "vendor-feedback-loop"
+diagramCaption = "A self-reinforcing loop. Internal fragmentation shapes the market into matching categories; each function buys separately; the internal boundaries harden; and the fragmentation deepens with every cycle."
 
 definition = "The vendor feedback loop is the dynamic in which internal organisational fragmentation shapes the external vendor landscape, which then sells that fragmentation back to each function as separate products. Because each function names its problem differently, the market builds a distinct category to match, and every purchase deepens the fragmentation that created the category."
 

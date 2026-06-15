@@ -1,0 +1,26 @@
+<svg viewBox="0 0 640 250" role="img" aria-labelledby="oml-t oml-d" xmlns="http://www.w3.org/2000/svg">
+  <title id="oml-t">Operating model limits</title>
+  <desc id="oml-d">Inside its valid domain the model is effective. Beyond the limit, activity keeps rising while outcomes flatten, and the gap is wasted motion.</desc>
+
+  <!-- axes -->
+  <line class="stroke-muted" x1="70" y1="40" x2="70" y2="200"/>
+  <line class="stroke-muted" x1="70" y1="200" x2="600" y2="200"/>
+
+  <!-- wasted-motion band (between curves, past the limit) -->
+  <polygon class="fill-band" points="320,120 600,55 600,120"/>
+
+  <!-- limit threshold -->
+  <line class="stroke-dash" x1="320" y1="40" x2="320" y2="200"/>
+  <text class="t-accent t-small" x="320" y="32" text-anchor="middle">limit of valid domain</text>
+
+  <!-- curves -->
+  <path class="stroke" d="M70,195 L320,120 L600,55"/>
+  <path class="stroke-muted" style="stroke:var(--color-muted)" d="M70,195 L320,120 L600,118"/>
+
+  <text class="t-accent t-small" x="596" y="50" text-anchor="end">activity</text>
+  <text class="t-small" x="596" y="134" text-anchor="end">outcomes</text>
+
+  <text class="t-small" x="195" y="190" text-anchor="middle">model effective</text>
+  <text class="t-small" x="460" y="190" text-anchor="middle">more motion, same bottleneck</text>
+  <text class="t-small" x="335" y="225" text-anchor="middle">environment speed &amp; variability &#8594;</text>
+</svg>

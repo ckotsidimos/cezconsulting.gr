@@ -1,0 +1,16 @@
+{{ define "main" }}
+  <article class="section">
+    <div class="container">
+      <div class="section-heading">
+        <p class="eyebrow">Insights</p>
+        <h1>{{ .Title }}</h1>
+        {{ with .Description }}<p class="lede">{{ . }}</p>{{ end }}
+      </div>
+      <div class="card-grid" aria-label="Insights">
+        {{ partial "components/advisory-card.html" (dict "label" "01" "title" "Models" "href" "/frameworks/" "summary" "You can feel the friction but cannot name it. Each model puts a precise name to a structural pattern that stalls technology and AI inside large organisations, so you can tell whether it is the one holding you back.") }}
+        {{ partial "components/advisory-card.html" (dict "label" "02" "title" "Deep Dives" "href" "/essays/" "summary" "For when the headline is not enough and you need the whole argument, to settle a direction in your own mind or make the case to people who will resist it. Why capable organisations stall, and what actually moves them.") }}
+        {{ partial "components/advisory-card.html" (dict "label" "03" "title" "Executive Briefs" "href" "/briefings/" "summary" "Two minutes before the meeting. One structural insight stripped to the point, sharp enough to act on and short enough to forward to your board.") }}
+      </div>
+    </div>
+  </article>
+{{ end }}

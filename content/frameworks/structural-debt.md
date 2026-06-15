@@ -6,6 +6,8 @@ date = 2026-06-14
 featured = false
 readingTime = "4 min read"
 draft = false
+diagram = "structural-debt"
+diagramCaption = "One class of problem, solved independently by several functions, each with its own tooling, governance and skills. The duplication is invisible on any single budget line, and the interest is paid every quarter."
 
 definition = "Structural debt is what an organisation accumulates when separate functions solve the same class of problem independently, with different tools, teams, and governance. It is the organisational equivalent of technical debt: the duplication compounds, and the interest is paid every quarter in redundant licensing, parallel governance, divergent maturity, and integration cost."
 

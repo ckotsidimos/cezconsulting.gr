@@ -4,6 +4,10 @@
       <p class="eyebrow">Advisory</p>
       <h1>{{ .Title }}</h1>
       {{ with .Description }}<p class="lede">{{ . }}</p>{{ end }}
+      <figure class="diagram">
+        {{ partial "diagrams/advisory-intensity.html" . }}
+        <figcaption>Strategic Diagnostics is the lowest-intensity engagement and the usual way in; the Executive Advisory Retainer is the ongoing core; Transformation Leadership and Counsel is the highest intensity.</figcaption>
+      </figure>
       {{ .Content }}
     </div>
   </article>

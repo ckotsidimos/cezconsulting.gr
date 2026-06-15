@@ -13,6 +13,8 @@ Most AI governance assessments test the technology. This one tests the operating
 
 Work through the five dimensions below. For each, answer honestly against your own organisation, not the policy document. The interpretation guide at the end tells you where the real exposure sits.
 
+{{< diagram name="agentic-ai-readiness" caption="The five dimensions, and the three result bands. The score is the number of weak-signal answers. Two to three is the most dangerous range, because the architecture can pass audit while the diagnostic function quietly has no owner." >}}
+
 ## Dimension 1 — The two functions of oversight
 
 The first failure is conceptual: treating all human oversight as one thing.

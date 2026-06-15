@@ -13,12 +13,25 @@
     {{ $css := slice (resources.Get "css/main.css") (resources.Get "css/typography.css") (resources.Get "css/layout.css") (resources.Get "css/components.css") (resources.Get "css/utilities.css") }}
     {{ $styles := $css | resources.Concat "css/site.css" | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}">
+    <noscript><style>@media (max-width: 47.99rem){.site-nav{display:flex !important;flex-direction:column}.nav-toggle{display:none}}</style></noscript>
   </head>
   <body>
     {{ partial "site-header.html" . }}
     <main id="main-content">
+      {{ if not .IsHome }}{{ partial "breadcrumbs.html" . }}{{ end }}
       {{ block "main" . }}{{ end }}
     </main>
     {{ partial "site-footer.html" . }}
+    <script>
+      (function () {
+        var toggle = document.querySelector('.nav-toggle');
+        var nav = document.getElementById('primary-nav');
+        if (!toggle || !nav) return;
+        toggle.addEventListener('click', function () {
+          var open = nav.classList.toggle('is-open');
+          toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        });
+      })();
+    </script>
   </body>
 </html>

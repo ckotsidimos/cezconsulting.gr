@@ -1,0 +1,22 @@
+<svg viewBox="0 0 640 230" role="img" aria-labelledby="dl-t dl-d" xmlns="http://www.w3.org/2000/svg">
+  <title id="dl-t">Decision latency</title>
+  <desc id="dl-d">Work is ready early in the timeline, but the decision keeps travelling through queues, reviews, committees and change windows long after.</desc>
+
+  <!-- intent / action markers -->
+  <line class="stroke" x1="80" y1="70" x2="80" y2="185"/>
+  <text class="t-strong t-small" x="80" y="58" text-anchor="start">Intent</text>
+  <line class="stroke" x1="560" y1="70" x2="560" y2="185"/>
+  <text class="t-strong t-small" x="560" y="58" text-anchor="end">Coordinated action</text>
+
+  <!-- single elapsed-time bar: work segment + latency segment -->
+  <rect class="fill-accent" x="80" y="100" width="95" height="32"/>
+  <rect class="fill-band-strong" x="175" y="100" width="385" height="32"/>
+
+  <text class="t-accent t-small" x="367" y="92" text-anchor="middle">Decision latency</text>
+  <text class="t-small" x="80" y="152" text-anchor="start">work ready in days</text>
+  <text class="t-small" x="367" y="152" text-anchor="middle">queue &#183; risk review &#183; committee &#183; board &#183; change window</text>
+
+  <!-- baseline -->
+  <line class="stroke-muted" x1="70" y1="185" x2="600" y2="185"/>
+  <text class="t-small" x="600" y="205" text-anchor="end">time &#8594;</text>
+</svg>

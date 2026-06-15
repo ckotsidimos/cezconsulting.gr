@@ -6,6 +6,8 @@ date = 2026-06-14
 featured = false
 readingTime = "5 min read"
 draft = false
+diagram = "decision-latency"
+diagramCaption = "Latency is the interval the decision waits, not the time the work takes. The work is ready in days; the decision keeps travelling through queues, reviews, committees and change windows."
 
 definition = "Decision latency is the elapsed time between intent and coordinated action across an organisation. It measures the interval in which a decision waits, in queues, approvals, and committees, rather than the time it takes to do the work itself. In most large organisations it is the dominant constraint on execution, and it is a property of the operating model, not of the people inside it."
 

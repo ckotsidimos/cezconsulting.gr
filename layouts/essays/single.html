@@ -2,13 +2,13 @@
   <article class="essay section">
     <div class="container essay__container">
       <header class="essay__header">
-        <p class="eyebrow">Essay</p>
+        <p class="eyebrow">Deep Dive</p>
         <h1>{{ .Title }}</h1>
         {{ with .Description }}<p class="lede">{{ . }}</p>{{ end }}
         {{ partial "components/metadata-row.html" (slice
           (dict "label" "Reading time" "value" (cond (isset .Params "readingtime") .Params.readingTime (printf "%d min read" .ReadingTime)))
           (dict "label" "Published" "value" (.Date.Format "2 Jan 2006"))
-          (dict "label" "Type" "value" (.Params.type | default "Essay"))
+          (dict "label" "Type" "value" (.Params.type | default "Deep Dive"))
         ) }}
       </header>
 
@@ -25,7 +25,7 @@
 
       {{ with .Params.relatedFrameworks }}
         <section class="related-frameworks" aria-labelledby="related-frameworks-title">
-          <h2 id="related-frameworks-title">Related frameworks</h2>
+          <h2 id="related-frameworks-title">Related models</h2>
           <div class="related-frameworks__list">
             {{ range . }}
               {{ partial "components/framework-summary.html" . }}

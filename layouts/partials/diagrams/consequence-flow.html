@@ -1,0 +1,30 @@
+<svg viewBox="0 0 640 230" role="img" aria-labelledby="cf-t cf-d" xmlns="http://www.w3.org/2000/svg">
+  <title id="cf-t">Effort absorbed by the operating model</title>
+  <desc id="cf-d">Investment, pilots and governance effort flow toward production, but the operating model absorbs most of it; only a fraction reaches production and value.</desc>
+  <defs>
+    <marker id="cf-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" class="fill-accent"/>
+    </marker>
+  </defs>
+
+  <!-- inbound effort -->
+  <text class="t-small" x="20" y="64" text-anchor="start">Investment</text>
+  <line class="stroke" marker-end="url(#cf-arrow)" x1="20" y1="75" x2="330" y2="75"/>
+  <text class="t-small" x="20" y="114" text-anchor="start">Pilots</text>
+  <line class="stroke" marker-end="url(#cf-arrow)" x1="20" y1="125" x2="330" y2="125"/>
+  <text class="t-small" x="20" y="164" text-anchor="start">Governance effort</text>
+  <line class="stroke" marker-end="url(#cf-arrow)" x1="20" y1="175" x2="330" y2="175"/>
+
+  <!-- the operating model wall -->
+  <rect class="fill-band-strong" x="345" y="45" width="30" height="150"/>
+  <text class="t-accent t-small" x="360" y="38" text-anchor="middle">Operating model</text>
+
+  <!-- thin trickle through to production -->
+  <line class="stroke-muted" style="stroke:var(--color-accent)" marker-end="url(#cf-arrow)" x1="375" y1="125" x2="455" y2="125"/>
+
+  <rect class="fill-surface" x="465" y="103" width="150" height="44"/>
+  <text class="t-strong t-small" x="540" y="122" text-anchor="middle">Production</text>
+  <text class="t-strong t-small" x="540" y="138" text-anchor="middle">&amp; value</text>
+
+  <text class="t-small" x="190" y="212" text-anchor="middle">most effort absorbed</text>
+</svg>

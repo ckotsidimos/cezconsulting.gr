@@ -84,6 +84,8 @@
 }
 
 .recognition,
+.consequence,
+.closing,
 .footer-cta {
   border-top: 1px solid var(--color-border);
 }
@@ -176,6 +178,23 @@
   color: var(--color-muted);
 }
 
+/* In-content links (markdown prose + homepage inline links) must be visible.
+   The global reset strips link styling for nav/cards/buttons that style
+   themselves; content links opt back in here. */
+.prose a,
+.advisory__contact a {
+  color: var(--color-accent);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+  text-decoration-thickness: 1px;
+}
+
+.prose a:hover,
+.advisory__contact a:hover {
+  text-decoration-thickness: 2px;
+}
+
 .text-link {
   display: inline-block;
   margin-top: 1rem;
@@ -266,4 +285,89 @@
 .insights .rail-item {
   border: 1px solid var(--color-border);
   padding: 1.25rem;
+}
+
+/* Diagram system: hand-built inline SVG, monochrome + single accent.
+   Theming is centralised here so every diagram stays consistent and
+   responds to the design tokens. SVGs use this shared class vocabulary. */
+.diagram {
+  margin: 2.25rem 0;
+}
+
+.diagram svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 46rem;
+}
+
+.diagram figcaption {
+  margin-top: 0.85rem;
+  color: var(--color-muted);
+  font-size: 0.9rem;
+  max-width: 46rem;
+}
+
+.diagram text {
+  font-family: var(--font-sans);
+  fill: var(--color-muted);
+  font-size: 14px;
+}
+
+.diagram .t-strong {
+  fill: var(--color-text);
+  font-weight: 600;
+}
+
+.diagram .t-accent {
+  fill: var(--color-accent);
+  font-weight: 700;
+}
+
+.diagram .t-small {
+  font-size: 12px;
+}
+
+.diagram .stroke {
+  stroke: var(--color-accent);
+  fill: none;
+  stroke-width: 2;
+}
+
+.diagram .stroke-muted {
+  stroke: var(--color-border);
+  fill: none;
+  stroke-width: 1.5;
+}
+
+.diagram .stroke-dash {
+  stroke: var(--color-accent);
+  fill: none;
+  stroke-width: 1.5;
+  stroke-dasharray: 5 5;
+}
+
+.diagram .fill-accent {
+  fill: var(--color-accent);
+}
+
+.diagram .fill-surface {
+  fill: var(--color-surface);
+  stroke: var(--color-border);
+  stroke-width: 1.5;
+}
+
+.diagram .fill-band {
+  fill: var(--color-accent);
+  opacity: 0.08;
+}
+
+.diagram .fill-band-strong {
+  fill: var(--color-accent);
+  opacity: 0.16;
+}
+
+/* Framework diagram sits inside the reference column width */
+.framework__diagram {
+  margin-bottom: clamp(2.5rem, 6vw, 4rem);
 }

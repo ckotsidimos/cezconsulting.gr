@@ -12,7 +12,8 @@
     <link rel="icon" href="/favicon.ico" sizes="any">
     
     
-    <link rel="stylesheet" href="/css/site.min.fa3f78bc6ec514299f4d33f6afa43863d90a19e7335c594751863d7d81a57032.css" integrity="sha256-&#43;j94vG7FFCmfTTP2r6Q4Y9kKGeczXFlHUYY9fYGlcDI=">
+    <link rel="stylesheet" href="/css/site.min.0ec4660b877463c4db944ba2adbd7cedc70143c1e4c1a762a711c27d2b7ab461.css" integrity="sha256-DsRmC4d0Y8TblEuirb187ccBQ8HkwadipxHCfSt6tGE=">
+    <noscript><style>@media (max-width: 47.99rem){.site-nav{display:flex !important;flex-direction:column}.nav-toggle{display:none}}</style></noscript>
   </head>
   <body>
     <header class="site-header">
@@ -24,13 +25,18 @@
       </svg>
       <span class="site-brand__word">CEZ Consulting</span>
     </a>
-    <nav class="site-nav" aria-label="Primary navigation">
+    <button class="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-controls="primary-nav" aria-expanded="false">
+      <span class="nav-toggle__bar"></span>
+      <span class="nav-toggle__bar"></span>
+      <span class="nav-toggle__bar"></span>
+    </button>
+    <nav class="site-nav" id="primary-nav" aria-label="Primary navigation">
       
         <a href="/advisory/">Advisory</a>
       
-        <a href="/diagnostics/">Diagnostics</a>
+        <a href="/insights/">Insights</a>
       
-        <a href="/essays/">Essays</a>
+        <a href="/diagnostics/">Diagnostics</a>
       
         <a href="/about/">About</a>
       
@@ -41,22 +47,73 @@
 </header>
 
     <main id="main-content">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+  <div class="container container--narrow">
+    <ol class="breadcrumb__list">
+      <li class="breadcrumb__item"><a href="/">Home</a></li>
+      
+      <li class="breadcrumb__item" aria-current="page">Advisory</li>
+    </ol>
+  </div>
+</nav>
+
       
   <article class="section">
     <div class="container container--narrow prose">
       <p class="eyebrow">Advisory</p>
       <h1>Advisory</h1>
       <p class="lede">Independent counsel for senior leaders where the constraint is the operating model, not the technology. Three ways to engage, in order of intensity.</p>
+      <figure class="diagram">
+        <svg viewBox="0 0 640 290" role="img" aria-labelledby="ai-t ai-d" xmlns="http://www.w3.org/2000/svg">
+  <title id="ai-t">Three ways to engage, by intensity</title>
+  <desc id="ai-d">Strategic Diagnostics is the lowest-intensity engagement and the usual entry point into an ongoing Executive Advisory Retainer; Transformation Leadership and Counsel is the highest intensity.</desc>
+  <defs>
+    <marker id="ai-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" class="fill-accent"/>
+    </marker>
+  </defs>
+
+  
+  <rect class="fill-band-strong" x="70" y="140" width="140" height="90"/>
+  <rect class="fill-accent" x="70" y="140" width="140" height="4"/>
+  <rect class="fill-band-strong" x="250" y="90" width="140" height="140"/>
+  <rect class="fill-accent" x="250" y="90" width="140" height="4"/>
+  <rect class="fill-band-strong" x="430" y="45" width="140" height="185"/>
+  <rect class="fill-accent" x="430" y="45" width="140" height="4"/>
+
+  
+  <path class="stroke" marker-end="url(#ai-arrow)" d="M140,132 Q190,96 248,108"/>
+  <text class="t-small" x="150" y="120" text-anchor="start">often the entry point</text>
+
+  
+  <line class="stroke-muted" x1="60" y1="230" x2="590" y2="230"/>
+
+  
+  <text class="t-strong t-small" x="140" y="250" text-anchor="middle">Strategic</text>
+  <text class="t-strong t-small" x="140" y="266" text-anchor="middle">Diagnostics</text>
+  <text class="t-strong t-small" x="320" y="250" text-anchor="middle">Executive Advisory</text>
+  <text class="t-strong t-small" x="320" y="266" text-anchor="middle">Retainer</text>
+  <text class="t-strong t-small" x="500" y="250" text-anchor="middle">Transformation</text>
+  <text class="t-strong t-small" x="500" y="266" text-anchor="middle">Leadership &amp; Counsel</text>
+
+  <text class="t-accent t-small" x="590" y="284" text-anchor="end">engagement intensity &#8594;</text>
+</svg>
+
+        <figcaption>Strategic Diagnostics is the lowest-intensity engagement and the usual way in; the Executive Advisory Retainer is the ongoing core; Transformation Leadership and Counsel is the highest intensity.</figcaption>
+      </figure>
       <p>CEZ Consulting works with a small number of senior leaders at any one time. The engagement is always the same in character: independent judgment from someone who has operated technology at scale inside complex, regulated organisations, applied to the specific operating model in front of you. It is not delivery, not implementation, and not vendor advice. There are three ways to work together.</p>
 <h2 id="executive-advisory-retainer">Executive Advisory Retainer</h2>
+<p>You are about to commit to a direction, and the only people you can test it against either report to you or are selling to you. Left there, the decision gets made on the cleanest narrative in the room rather than the soundest reading of the operating model, and the cost shows up much later, when it is harder to reverse.</p>
 <p>An ongoing partnership and a standing independent challenge function. A place to work through the decisions that do not fit a project plan: where authority should sit, how governance should change as operating tempo rises, how to operationalise AI without the operating model quietly killing it.</p>
 <p>It is for executives, CTOs, CIOs, and heads of platform or architecture who need a rigorous thinking partner outside the reporting line and outside the vendor relationship. The relationship is continuing rather than scoped to a deliverable: regular sessions, access between them, and counsel that compounds because the context is already understood.</p>
 <p>The value is better decisions made faster, and a sounding board that will tell you what your own organisation cannot.</p>
 <h2 id="transformation-leadership-and-counsel">Transformation Leadership and Counsel</h2>
+<p>The programme is funded and moving, and you can already see it solving the technology while leaving the operating model that will reject it untouched. Inaction here does not look like failure. It looks like a successful delivery that quietly never reaches production, signed off and celebrated while the structural blocker stays exactly where it was.</p>
 <p>Higher-intensity guidance through the periods that decide whether change holds: AI operationalisation, platform transformation, governance redesign, operating-model restructuring, or a production-adoption crisis.</p>
 <p>It is for leaders steering a major change who need executive-level operating-model judgment alongside them, not another programme manager. The work stays on the structural decisions, the decision architecture, the shape of governance, the operating model itself, through the critical window.</p>
 <p>The outcome is change that survives contact with the operating model, because the structure was addressed and not just the technology. This is counsel, not delivery management.</p>
 <h2 id="strategic-diagnostics">Strategic Diagnostics</h2>
+<p>The third pilot has stalled at the same place as the first two, and &ldquo;a delivery problem&rdquo; is no longer a convincing explanation. The cost of not naming it is another cycle spent fixing the technology while the structural constraint stays in place, and another quarter of effort that cannot move the thing that is actually holding you back.</p>
 <p>A structured assessment of where an operating model is blocking execution: structural blockers, decision friction, production-readiness, governance bottlenecks.</p>
 <p>It is for leaders who suspect the constraint is structural rather than technical and want it named precisely before committing to a direction. The engagement produces a clear read of where latency and friction are concentrated, and what would actually move them.</p>
 <p>It delivers a precise structural diagnosis you can act on. Valuable on its own, and often the entry point into a retainer. This is usually where the work begins.</p>
@@ -71,8 +128,8 @@
   <div class="container site-footer__inner">
     <p>&copy; 2026 CEZ Consulting</p>
     <nav class="footer__links" aria-label="Secondary navigation">
-      <a href="/frameworks/">Frameworks</a>
-      <a href="/briefings/">Briefings</a>
+      <a href="/insights/">Insights</a>
+      <a href="/diagnostics/">Diagnostics</a>
       <a href="/contact/">Contact</a>
     </nav>
     <div class="footer__external">
@@ -83,5 +140,16 @@
   </div>
 </footer>
 
+    <script>
+      (function () {
+        var toggle = document.querySelector('.nav-toggle');
+        var nav = document.getElementById('primary-nav');
+        if (!toggle || !nav) return;
+        toggle.addEventListener('click', function () {
+          var open = nav.classList.toggle('is-open');
+          toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        });
+      })();
+    </script>
   </body>
 </html>

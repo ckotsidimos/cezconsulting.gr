@@ -1,0 +1,11 @@
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <div class="container container--narrow">
+    <ol class="breadcrumb__list">
+      <li class="breadcrumb__item"><a href="/">Home</a></li>
+      {{ with .Parent }}{{ if not .IsHome }}
+        <li class="breadcrumb__item"><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+      {{ end }}{{ end }}
+      <li class="breadcrumb__item" aria-current="page">{{ .Title }}</li>
+    </ol>
+  </div>
+</nav>

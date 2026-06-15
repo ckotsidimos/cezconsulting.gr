@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2026-06-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/insights/</loc>
+    <lastmod>2026-06-15T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/about/</loc>
     <lastmod>2026-06-14T00:00:00+00:00</lastmod>
   </url><url>
@@ -23,9 +29,6 @@
     <loc>http://localhost:1313/tags/aiops/</loc>
     <lastmod>2026-06-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/briefings/</loc>
-    <lastmod>2026-06-14T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/diagnostics/agentic-ai-readiness/</loc>
     <lastmod>2026-06-14T00:00:00+00:00</lastmod>
   </url><url>
@@ -38,22 +41,19 @@
     <loc>http://localhost:1313/frameworks/decision-latency/</loc>
     <lastmod>2026-06-14T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/essays/</loc>
+    <lastmod>2026-06-14T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tags/diagnostic/</loc>
     <lastmod>2026-06-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/diagnostics/</loc>
     <lastmod>2026-06-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/essays/</loc>
-    <lastmod>2026-06-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/frameworks/</loc>
+    <loc>http://localhost:1313/briefings/</loc>
     <lastmod>2026-06-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/governance/</loc>
-    <lastmod>2026-06-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2026-06-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/human-in-the-loop/</loc>
@@ -63,6 +63,9 @@
     <lastmod>2026-06-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/essays/locally-rational-globally-expensive/</loc>
+    <lastmod>2026-06-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/frameworks/</loc>
     <lastmod>2026-06-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/briefings/narrative-vs-structure/</loc>
@@ -83,10 +86,10 @@
     <loc>http://localhost:1313/tags/roi/</loc>
     <lastmod>2026-06-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/frameworks/structural-debt/</loc>
+    <loc>http://localhost:1313/tags/structural-debt/</loc>
     <lastmod>2026-06-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/structural-debt/</loc>
+    <loc>http://localhost:1313/frameworks/structural-debt/</loc>
     <lastmod>2026-06-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
