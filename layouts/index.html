@@ -11,6 +11,7 @@
     )
   ) }}
 
+<<<<<<< HEAD
   <section class="insights section">
     <div class="container">
       <p class="eyebrow">Selected insights</p>
@@ -18,10 +19,28 @@
         {{ partial "components/insight-card.html" (dict "type" "Model" "title" "Decision Latency" "href" "/frameworks/decision-latency/") }}
         {{ partial "components/insight-card.html" (dict "type" "Deep Dive" "title" "The Production Gap" "href" "/essays/the-production-gap/") }}
         {{ partial "components/insight-card.html" (dict "type" "Executive Brief" "title" "The Fallacy of ROI" "href" "/briefings/the-fallacy-of-roi/") }}
+=======
+  <section class="consequence section">
+    <div class="container">
+      <div class="consequence-grid">
+        <div class="consequence-col">
+          <p class="eyebrow">What inaction looks like</p>
+          <h2>The cost is rarely visible until it is expensive.</h2>
+          <p>The gap does not announce itself. It shows up as the pilot that passes every technical review and still never reaches production, because no one owns the decision to deploy it. As the governance model that satisfies the auditor while no one in the building can actually interpret what it flags. As the third initiative to stall at the same point as the first two, each time explained away as a delivery problem.</p>
+          <p>None of these read as structural on a status report, which is precisely why they persist. The technology keeps working. The operating model keeps refusing it. The cost compounds quietly, in time, in credibility, and in the options you no longer have by the time the pattern becomes undeniable.</p>
+        </div>
+        <div class="consequence-col">
+          <figure class="diagram">
+            {{ partial "diagrams/consequence-flow.html" . }}
+            <figcaption>Investment, pilots and governance effort keep flowing in. The operating model absorbs most of it, and only a fraction reaches production. Adding more effort upstream does not move the constraint.</figcaption>
+          </figure>
+        </div>
+>>>>>>> 78c5831 (Ttiles)
       </div>
     </div>
   </section>
 
+<<<<<<< HEAD
   <section class="consequence section">
     <div class="container container--narrow">
       <p class="eyebrow">What inaction looks like</p>
@@ -32,6 +51,16 @@
         {{ partial "diagrams/consequence-flow.html" . }}
         <figcaption>Investment, pilots and governance effort keep flowing in. The operating model absorbs most of it, and only a fraction reaches production. Adding more effort upstream does not move the constraint.</figcaption>
       </figure>
+=======
+  <section class="insights section">
+    <div class="container">
+      <p class="eyebrow">Start here</p>
+      <div class="insights-rail">
+        {{ partial "components/insight-card.html" (dict "type" "Model" "title" "Decision Latency" "href" "/frameworks/decision-latency/" "pain" "Why are we so slow?") }}
+        {{ partial "components/insight-card.html" (dict "type" "Deep Dive" "title" "The Production Gap" "href" "/essays/the-production-gap/" "pain" "Why is none of our AI in production?") }}
+        {{ partial "components/insight-card.html" (dict "type" "Executive Brief" "title" "The Fallacy of ROI" "href" "/briefings/the-fallacy-of-roi/" "pain" "Is ROI even the right question?") }}
+      </div>
+>>>>>>> 78c5831 (Ttiles)
     </div>
   </section>
 

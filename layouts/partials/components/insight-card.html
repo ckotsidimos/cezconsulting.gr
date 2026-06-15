@@ -1,4 +1,5 @@
 <a href="{{ .href }}" class="rail-item">
   <span>{{ .type }}</span>
   <strong>{{ .title }}</strong>
+  {{ with .pain }}<span class="rail-item__pain">{{ . }}</span>{{ end }}
 </a>
