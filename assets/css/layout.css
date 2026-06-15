@@ -163,11 +163,11 @@
 .breadcrumb__list {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.45rem;
+  gap: 0.4rem;
   list-style: none;
   margin: 0;
-  padding-block: 0.85rem;
-  font-size: 0.85rem;
+  padding-block: 0.6rem;
+  font-size: 0.72rem;
   color: var(--color-muted);
 }
 
@@ -178,8 +178,8 @@
 }
 
 .breadcrumb__item + .breadcrumb__item::before {
-  content: "/";
-  color: var(--color-border);
+  content: "\203A";
+  color: var(--color-muted);
 }
 
 .breadcrumb__item a {
