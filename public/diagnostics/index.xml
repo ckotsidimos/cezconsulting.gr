@@ -10,8 +10,15 @@
 		
 		
 		
-			<lastBuildDate></lastBuildDate>
+			<lastBuildDate>Sun, 14 Jun 2026 00:00:00 +0000</lastBuildDate>
 		
 			<atom:link href="http://localhost:1313/diagnostics/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Can Your Organisation Actually Govern Agentic AI?</title>
+				<link>http://localhost:1313/diagnostics/agentic-ai-readiness/</link>
+				<pubDate>Sun, 14 Jun 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/diagnostics/agentic-ai-readiness/</guid>
+				<description>Most AI governance assessments test the technology. This one tests whether anyone in your organisation can interpret what it flags and act with authority.</description>
+			</item>
 	</channel>
 </rss>

@@ -1,5 +1,5 @@
 <section class="hero section">
-  <div class="container hero__grid{{ if not .insights }} hero__grid--full{{ end }}">
+  <div class="container hero__grid{{ if .figure }} hero__grid--figure{{ else if not .insights }} hero__grid--full{{ end }}">
     <div class="hero__message">
       <h1>{{ .title }}</h1>
       <p class="lede">{{ .summary }}</p>
@@ -18,6 +18,13 @@
           {{ partial "components/insight-card.html" . }}
         {{ end }}
       </aside>
+    {{ end }}
+
+    {{ with .figure }}
+      <figure class="hero__figure">
+        <img src="{{ .src }}" alt="{{ .alt }}" loading="eager" />
+        {{ with .caption }}<figcaption class="figure__caption">{{ . }}</figcaption>{{ end }}
+      </figure>
     {{ end }}
   </div>
 </section>

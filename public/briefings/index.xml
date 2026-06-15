@@ -10,6 +10,43 @@
 		
 		
 		
+			<lastBuildDate>Sun, 14 Jun 2026 00:00:00 +0000</lastBuildDate>
+		
 			<atom:link href="http://localhost:1313/briefings/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Locally Rational, Globally Expensive</title>
+				<link>http://localhost:1313/briefings/locally-rational-globally-expensive/</link>
+				<pubDate>Sun, 14 Jun 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/briefings/locally-rational-globally-expensive/</guid>
+				<description>Every function adopts AI for the same problem under a different name. Each choice is rational; the aggregate is structural debt nobody chose.</description>
+			</item>
+			<item>
+				<title>Narrative vs Structure</title>
+				<link>http://localhost:1313/briefings/narrative-vs-structure/</link>
+				<pubDate>Sun, 14 Jun 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/briefings/narrative-vs-structure/</guid>
+				<description>Faced with a structural problem, organisations change the narrative, not the structure. AI is the first technology fast enough to tell them apart.</description>
+			</item>
+			<item>
+				<title>The Fallacy of ROI</title>
+				<link>http://localhost:1313/briefings/the-fallacy-of-roi/</link>
+				<pubDate>Sun, 14 Jun 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/briefings/the-fallacy-of-roi/</guid>
+				<description>The ROI question is a comprehension problem dressed as a financial one. It defers commitment without anyone having to say no.</description>
+			</item>
+			<item>
+				<title>The Production Gap</title>
+				<link>http://localhost:1313/briefings/the-production-gap/</link>
+				<pubDate>Sun, 14 Jun 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/briefings/the-production-gap/</guid>
+				<description>AI pilots succeed and then stall at the production boundary. The cause is the operating model, not the technology.</description>
+			</item>
+			<item>
+				<title>Your AI Governance Will Fail in the Org Chart, Not the Architecture</title>
+				<link>http://localhost:1313/briefings/ai-governance-org-chart/</link>
+				<pubDate>Sun, 14 Jun 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/briefings/ai-governance-org-chart/</guid>
+				<description>Most enterprises treat AI governance as an engineering problem. The failure happens elsewhere: in the diagnostic layer they spent a decade dismantling.</description>
+			</item>
 	</channel>
 </rss>

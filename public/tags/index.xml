@@ -14,10 +14,24 @@
 		
 			<atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
 			<item>
+				<title>Agentic AI</title>
+				<link>http://localhost:1313/tags/agentic-ai/</link>
+				<pubDate>Sun, 14 Jun 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/tags/agentic-ai/</guid>
+				<description></description>
+			</item>
+			<item>
 				<title>AI Adoption</title>
 				<link>http://localhost:1313/tags/ai-adoption/</link>
 				<pubDate>Sun, 14 Jun 2026 00:00:00 +0000</pubDate>
 				<guid>http://localhost:1313/tags/ai-adoption/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>AI Governance</title>
+				<link>http://localhost:1313/tags/ai-governance/</link>
+				<pubDate>Sun, 14 Jun 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/tags/ai-governance/</guid>
 				<description></description>
 			</item>
 			<item>
@@ -42,10 +56,24 @@
 				<description></description>
 			</item>
 			<item>
+				<title>Diagnostic</title>
+				<link>http://localhost:1313/tags/diagnostic/</link>
+				<pubDate>Sun, 14 Jun 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/tags/diagnostic/</guid>
+				<description></description>
+			</item>
+			<item>
 				<title>Governance</title>
 				<link>http://localhost:1313/tags/governance/</link>
 				<pubDate>Sun, 14 Jun 2026 00:00:00 +0000</pubDate>
 				<guid>http://localhost:1313/tags/governance/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Human-in-the-Loop</title>
+				<link>http://localhost:1313/tags/human-in-the-loop/</link>
+				<pubDate>Sun, 14 Jun 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/tags/human-in-the-loop/</guid>
 				<description></description>
 			</item>
 			<item>
