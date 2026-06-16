@@ -3,6 +3,20 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5S470EBVWV"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('consent', 'default', { 'analytics_storage': 'denied' });
+      try {
+        if (localStorage.getItem('cez-analytics-consent') === 'granted') {
+          gtag('consent', 'update', { 'analytics_storage': 'granted' });
+        }
+      } catch (e) {}
+      gtag('config', 'G-5S470EBVWV');
+    </script>
     <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} | {{ site.Title }}{{ end }}</title>
     <meta name="description" content="{{ .Description | default site.Params.description }}">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
@@ -22,6 +36,7 @@
       {{ block "main" . }}{{ end }}
     </main>
     {{ partial "site-footer.html" . }}
+    {{ partial "cookie-consent.html" . }}
     <script>
       (function () {
         var toggle = document.querySelector('.nav-toggle');

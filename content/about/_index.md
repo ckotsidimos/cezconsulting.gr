@@ -1,16 +1,18 @@
 +++
 title = "About"
-description = "Independent executive counsel, grounded in 27 years of operating technology at scale inside complex, regulated organisations."
+description = "Independent counsel from a senior operator, for when the operating model, not the technology, is what stands in the way."
 date = 2026-06-14
 draft = false
 +++
 
-CEZ Consulting is the advisory practice of Christos Kotsidimos. It provides independent counsel to senior leaders operationalising AI and technological change at scale, in the situations where the operating model, not the technology, is what stands in the way.
+I am Christos Kotsidimos. For 27 years I have worked where technology meets how organisations actually run, as an operator, an architect, and a technology executive, mostly inside large and regulated environments.
 
-The work rests on 27 years at the intersection of technology, architecture, and regulated industries: financial services, cloud platform transformation, enterprise architecture, and large-scale operating-model change. It is independent executive counsel, not delivery, implementation, or vendor advice.
+I moved InternetQ to the cloud as its technology lead, owning the platforms behind roughly 40% of revenue. As Chief Architect at Cloudreach I grew the Azure practice from £600K to £11 million and led architecture for regulated clients including a global bank and a greenfield digital bank. As CTO at Eviden I governed delivery and production readiness across regulated enterprise programmes and ran a global function accountable for over £100 million in annual billing. Today I advise CIOs and CTOs across Europe.
 
-CEZ applies a systems view of how enterprises absorb, delay, or distort technological change. [The Kinetic Enterprise](https://kineticorganization.com) is the theoretical canon; CEZ is where that thinking is applied to a specific executive's problem.
+The pattern repeated everywhere. Capable technology, capable people, and the work still stalled, not because the engineering failed but because the operating model around it could not decide, own, or absorb the change. The bottleneck had moved from execution to the structure around it, and almost no one was looking there.
 
-For the full professional background, selected writing, and career history, see [kotsidimos.com](https://kotsidimos.com).
+That is the work I do and the question I research. I am the author of [The Kinetic Enterprise](https://kineticorganization.com), and from September 2026 a part-time PhD candidate at Royal Holloway, University of London, researching enterprise operating models under uncertainty.
+
+CEZ Consulting is how I bring that to a small number of senior leaders: independent counsel for when the operating model, not the technology, is what stands in the way. Not delivery, not vendor advice. Judgment applied to the structure in front of you.
 
 If the structural problem is real, the conversation is straightforward. [Start it here](/contact/).
